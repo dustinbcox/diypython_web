@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+{% block title %}DiyPython - Class{% endblock %}
+{% block navbar %}
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DiyPython</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="active"><a href="/class">Class</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+{% endblock %}
+{% block content %}
+
+ <div class="container">
+
+<br><br><br><br>
+            <h1 class="cover-heading">#1: Python 101</h1>
+            <p>Sat Nov 14, 2015 1pm – 3pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+            <p>Learn Python by Doing It Yourself: <a href="http://diypython.com/">http://diypython.com</a>. We will start off with the very basics and then explore other intermediate to advanced topics. This is not your typical class: there will be some lecture, but a lot of hands on doing it yourself (hence the name).</p>
+
+            <p>Please bring a laptop or some computer (Raspberry Pi, Tablet, etc) that can run Python.</p>
+
+            <p>This first class will cover Python 101 of both Python 2.7 and 3.4. Covering types, classes, flow control, and other basic concepts.</p>
+
+	    <div style="width: 100%;">
+
+   		<div style="float:left; width: 50%">
+		    <iframe width="560" height="315" src="http://www.youtube.com/embed/K-IUHqwsRc0" frameborder="0" allowfullscreen></iframe>
+      		</div>
+
+         	<div style="float:left;">
+			<a href="https://github.com/dustinbcox/diypython/tree/master/class/python101">Github class example hello.py</a><br>
+			<a href="https://docs.python.org/2/">Python 2.x Documentation</a><br>
+			<a href="https://docs.python.org/3/">Python 3.x Documentation</a><br>
+			<a href="https://docs.python.org/2.7/library/__future__.html?highlight=future#module-__future__">from __future__</a><br>
+	    	</div>
+	    </div>
+	    <div style="clear:both"></div>
+
+
+            <h1 class="cover-heading">#2: Python 102</h1>
+            <p>Sat Dec 12, 2015 1pm – 3pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>The second class will cover classes and Object Oriented Design, and a continuation of types, flow control and other basic concepts.</p>
+
+
+	    <div style="width: 100%;">
+   		<div style="float:left; width: 50%">
+	    		<iframe width="560" height="315" src="//www.youtube.com/embed/QsM-BVy4emU" frameborder="0" allowfullscreen></iframe>
+      		</div>
+
+         	<div style="float:left;">
+			<a href="https://github.com/dustinbcox/diypython/tree/master/class/python102">Github class material of calculator and web scraping</a><br>
+			<a href="http://www.i-programmer.info/news/216-python/7179-python-27-to-be-maintained-until-2020.html">python 27 maintained until 2020</a><br>
+			<a href="https://python3wos.appspot.com/">Python 3 wall of superpowers (packages that work on python 3</a><br>
+			<a href="https://docs.python.org/2.7/library/argparse.html">Python 27 Argparse doc</a><br>
+			<a href="http://flask.pocoo.org/docs/0.10/quickstart/#quickstart">Flask (web microframework)</a><br>
+			<a href="https://www.python.org/dev/peps/pep-3333/">Python PEP 3333 (Python Web Server Gateway Interface)</a><br>
+<!--
+https://pypi.python.org/pypi?%3Aaction=search&term=urllib&submit=search
+https://docs.python.org/2.7/library/functions.html?highlight=dir#dir
+http://www.secdev.org/projects/scapy/doc/usage.html#interactive-tutorial
+-->
+
+	    	</div>
+	    </div>
+	    <div style="clear:both"></div>
+
+            <h1 class="cover-heading">#3: Python 103</h1>
+            <p>Sat Jan 30, 2016 6pm – 8pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>The third class will be a continuation of types, flow control and other basic concepts.</p>
+
+
+	    <div style="width: 100%;">
+   		<div style="float:left; width: 50%">
+	    		<iframe width="560" height="315" src="//www.youtube.com/embed/AVt2rugGzkI" frameborder="0" allowfullscreen></iframe>
+      		</div>
+
+         	<div style="float:left;">
+			<a href="https://pypi.python.org/pypi">PyPi - the Python Package Index</a><br>
+			<a href="https://bootstrap.pypa.io/get-pip.py">get-pip.py (Download)</a><br>
+			<a href="https://www.python.org/dev/peps/pep-0008/">PEP 0008 Style Guide for Python Code</a><br>
+			<a href="https://github.com/dustinbcox/diypython/tree/master/class/python103">Github class material</a><br>
+	    	</div>
+	    </div>
+	    <div style="clear:both"></div>
+
+
+            <h1 class="cover-heading">#4: Python 104 - Advanced</h1>
+            <p>Sat Apr 2, 2016 1pm – ~6pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Please welcome special guest Mike presenting an intro into iPython numpy scipy and sounddevice!</p>
+
+	    <div style="width: 100%;">
+   		<div style="float:left; width: 50%">
+	    		<iframe width="560" height="315" src="//www.youtube.com/embed/gWz-p0eYZpA" frameborder="0" allowfullscreen></iframe>
+      		</div>
+
+         	<div style="float:left;">
+			<a href="{{ url_for('static', filename='downloads/diypython004/diypython004.tar.gz') }}">Download targzip notebooks from Mike (class material)</a><br>
+	    	</div>
+	    </div>
+	    <div style="clear:both"></div>
+
+
+	    <div style="clear:both"></div>
+
+
+            <h1 class="cover-heading">#5: Python 105 - Intermediate</h1>
+            <p>Sat Jun 18, 2016 1pm – 3pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Intro to Python GUI programming with QT4</p>
+
+	    <div style="width: 100%;">
+	        Recording not available.
+      		</div>
+
+         	<div style="float:left;">
+			<a href="https://github.com/dustinbcox/diypython/blob/master/class/python105/qt_101.py">Github qt_101.py</a><br>
+			<a href="http://pyqt.sourceforge.net/Docs/PyQt4/">Python QT4 reference</a><br>
+	    	</div>
+
+
+
+
+	    <div style="clear:both"></div>
+
+
+            <h1 class="cover-heading">#6: Python 106 - Beginners</h1>
+            <p>Sat July 23, 2016 1:30pm – 4pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Intro to Web APIs (specifically requests)</p>
+
+	    <div style="width: 100%;">
+	        Recording not available due to technical difficulties.
+     	</div>
+
+         	<div style="float:left;">
+			<a href="https://github.com/dustinbcox/diypython/blob/master/class/python106/chuck_norris.py">Github chuck_norris.py</a><br>
+			<a href="http://docs.python-requests.org/en/master/">Requests: HTTP for Humans</a><br>
+			<a href="http://www.icndb.com/api/">The Internet Chuck Norris Database</a><br>
+			<a href="http://www.restapitutorial.com/httpstatuscodes.html">HTTP Status Codes</a><br>
+			<a href="http://www.json.org/">JSON</a><br>
+			<a href="http://www.bpython-interpreter.org/">BPython Interpreter</a><br>
+			<a href="https://pyformat.info/">PyFormat (format) and %s strings</a><br>
+			<a href="https://http.cat/">HTTP Status (as told with cats)</a><br>
+	    	</div>
+
+
+	    <div style="clear:both"></div>
+
+
+
+            <h1 class="cover-heading">#7: Python 107 - Beginners/Intermediate</h1>
+            <p>Sat August 27, 2016 6:00pm – 8pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Intro to Dango Web Development Part 1</p>
+
+	    <div style="width: 100%;">
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/Vs2ff3m6-rM" frameborder="0" allowfullscreen></iframe>
+     	    </div>
+
+         	<div style="float:left;">
+			<a href="https://docs.djangoproject.com/en/1.10/intro/tutorial01/">Writing your first Django app (tutorial)</a>
+	    	</div>
+
+
+	    <div style="clear:both"></div>
+
+
+            <h1 class="cover-heading">#8: Python 108 - Intermediate</h1>
+            <p>Sat October 29, 2016 5:30pm – 7:30pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Revisiting Python GUI programming with QT5</p>
+
+	    <div style="width: 100%;">
+	        Recording not available.
+      	</div>
+
+         	<div style="float:left;">
+			<a href="https://github.com/dustinbcox/diypython/blob/master/class/python108/qtablewidget_thing.py">Github qtablewidget_thing.py</a><br>
+			<a href="http://zetcode.com/gui/pyqt5/">Python QT5 Tutorial</a><br>
+			<a href="http://zetcode.com/gui/pyqt5/tetris/">Python QT5 tetris</a><br>
+			<a href="http://pyqt.sourceforge.net/Docs/PyQt5/class_reference.html">Python QT5 reference</a><br>
+	    	</div>
+
+
+	    <div style="clear:both"></div>
+
+
+
+            <h1 class="cover-heading">#9: Python 109 - Beginner</h1>
+            <p>Sat November 26, 2016 6:00pm – 8:00pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Guest presenter on Python recurison</p>
+
+	    <div style="width: 100%;">
+	        Recording not available due to technical difficulties.
+      	</div>
+
+         	<div style="float:left;">
+                 TODO slides
+	    	</div>
+
+	    <div style="clear:both"></div>
+
+
+	    <div style="clear:both"></div>
+
+
+
+            <h1 class="cover-heading">#10: Python 110 - Open Python Night</h1>
+            <p>Sat January 28, 2017 6:00pm – 8:00pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Start of 2017, Open Python Night</p>
+
+	    <div style="width: 100%;">
+	        Recording not available
+      	</div>
+
+
+	    <div style="clear:both"></div>
+
+
+        <h1 class="cover-heading">#11: DiyPython: #111 Learn Python by Doing It Yourself (Python Fundamentals)</h1>
+            <p> Sat, February 25, 2017, 6pm – 8pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	    <p>Start of 2017, Open Python Night</p>
+
+	    <div style="width: 100%;">
+	        Recording not available
+      	</div>
+
+	    <div style="clear:both"></div>
+
+
+
+            <h1 class="cover-heading">#12: Python 112 - Intro to Computer Vision (Simple CV) </h1>
+            <p>Sat, March 25, 2017, 6pm – 8pm Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	        <p></p>
+
+	    <div style="width: 100%;">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/jtLTSaP2xbQ" frameborder="0" allowfullscreen></iframe>
+      	</div>
+
+
+	    <div style="clear:both"></div>
+
+
+
+
+            <h1 class="cover-heading">#13: Python 113 - Intro to python </h1>
+            <p>Sun, June 25, 2017, 6pm - 9pm  Eastern Time at FamiLAB, 1355 Bennett Dr #105, Longwood, FL 32750, United States</p>
+	        <p>Intro to python for a FamiLAB member who has never programmed before.</p>
+
+	    <div style="width: 100%;">
+	        Recording not available
+      	</div>
+
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div><!-- /.container -->
+
+
+
+
+<!--    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+
+              <h3 class="masthead-brand">Home</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                </ul>
+              </nav>
+        </div>
+      </div>
+    </div>
+   -->
+{% endblock %}

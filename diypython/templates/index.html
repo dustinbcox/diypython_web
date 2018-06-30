@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}DiyPython{% endblock %}
+{% block navbar %}
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DiyPython</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="/class">Class</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+{% endblock %}
+{% block content %}
+
+<div class="container" style="text-align: center;">
+<br><br><br><br>
+
+            <h1 class="cover-heading">Welcome to DiyPython.</h1>
+
+            <div>
+                <img src="{{ url_for('static', filename='img/diy.jpg') }}">
+                <br>
+                <img src="{{ url_for('static', filename='img/python-logo-master-v3-TM.png')}}">
+            </div>
+
+	    <p class="lead">Welcome to DiyPython. Our goal is to continue the Python community in the Orlando, FL area.</p>
+	    <p>I'm teaching a python class monthly and they are recorded (under the class tab here).</p>
+	    <p>We also have a <a href="http://a2ss29.a2hosting.com/mailman/listinfo/orlandopy_orlandopy.a2hosted.com">mailing list</a> for the Users group aspect.</p>
+
+	    <p class="lead">The next class is Sat, June 30, 2018 at 6:00 PM @ Familab. Please <a href="https://www.eventbrite.com/e/diypython-tickets-46960477051">RSVP</a>.</p>
+	    
+	<div style="text-align: left;" noclass="alert-warning">
+	 	<p>For online chat, please use the <a href="https://familab.slack.com/">Familab Slack</a> or if you haven't signed up yet please do so at <a href="https://familab.org/slack">https://familab.org/slack</a> and click on the "Try It" link. Then join the #python channel</p>
+
+	</div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>&quot;Python&quot; and the Python logos are trademarks or registered trademarks of the Python Software Foundation</p>
+            </div>
+          </div>
+
+    </div><!-- /.container -->
+
+<!--new site-->
+{% endblock %}

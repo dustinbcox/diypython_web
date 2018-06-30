@@ -1,0 +1,49 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}DiyPython{% endblock %}
+{% block metas %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DiyPython">{{ super() }}
+{% endblock %}
+{% block head %}{{super()}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link href="{{ url_for('static', filename='css/cover.css') }}" rel="stylesheet">-->{% endblock %}
+{% block navbar %}
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="masthead clearfix">
+            <div class="inner">
+
+
+
+
+              <h3 class="masthead-brand">Home</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                </ul>
+              </nav>
+{% endblock %}
+{% block content %}
+            <h1 class="cover-heading">Welcome to DiyPython.</h1>
+<div>
+<img src="{{ url_for('static', filename='img/diy.jpg') }}">
+<br>
+<img src="{{ url_for('static', filename='img/python-logo-master-v3-TM.png')}}">
+</div>
+            <p class="lead">This is the creation of a Python class + Users Group.</p>
+            </div>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>"Python" and the Python logos are trademarks or registered trademarks of the Python Software Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
